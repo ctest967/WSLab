@@ -15,9 +15,9 @@ $LabConfig=@{ DomainAdminName='LabAdmin'; AdminPassword='LS1setup!'; Prefix = 'W
 #region Same as above, but with more explanation
     <#
     $LabConfig=@{
-        DomainAdminName='LabAdmin';                  # Used during 2_CreateParentDisks (no affect if changed after this step)
-        AdminPassword='LS1setup!';                   # Used during 2_CreateParentDisks. If changed after, it will break the functionality of 3_Deploy.ps1
-        Prefix = 'WSLab-';                           # All VMs and vSwitch are created with this prefix, so you can identify the lab
+        DomainAdminName='crosby';                  # Used during 2_CreateParentDisks (no affect if changed after this step)
+        AdminPassword='coding000#!';                   # Used during 2_CreateParentDisks. If changed after, it will break the functionality of 3_Deploy.ps1
+        Prefix = 'winlab';                           # All VMs and vSwitch are created with this prefix, so you can identify the lab
         SwitchName = 'LabSwitch';                    # Name of vSwitch
         SecureBoot=$true;                            # (Optional) Useful when testing unsigned builds (Useful for MS developers for daily builds)
         DCEdition='4';                               # 4 for DataCenter or 3 for DataCenterCore
